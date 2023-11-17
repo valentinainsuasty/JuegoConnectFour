@@ -1,6 +1,6 @@
 import logicaJuego.Evaluador;
 import logicaJuego.Tablero;
-import presentacion.Ventana;
+
 import java.util.Scanner;
 
 /**
@@ -29,7 +29,8 @@ public class Juego{
 
         tablero.imprimirMatriz();
         while (true) {
-            tablero.jugar();
+            int columna = 0;
+            tablero.jugar(columna);
             if (Evaluador.ganador(tablero.getMatriz(), Simbolo_Jugador_1)) {
                 System.out.println(Simbolo_Jugador_1 + " ha ganado.");
                 break;

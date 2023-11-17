@@ -1,6 +1,6 @@
 package logicaJuego;
-
 import java.util.Scanner;
+
 /**
  * clase Tablero
  */
@@ -54,7 +54,7 @@ public class Tablero {
      *
      * Complejidad temporal: 0(1) tiempo constante
      */
-    public void jugar() {
+    public void jugar(int columna) {
         char simbolo = turno1 ? simbolo_Jugador_1 : simbolo_Jugador_2;
         System.out.println("Ingresa tu posición");
         int x = lector.nextInt();
@@ -130,5 +130,4 @@ public class Tablero {
 
 
 }
-
 
